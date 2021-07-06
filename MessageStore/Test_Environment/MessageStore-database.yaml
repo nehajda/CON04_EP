@@ -6,7 +6,7 @@
     "minPoolSize": "20"
     "preparedStatementCacheSize": "10"
     "acquireIncrement": "20"
-  "url": "jdbc:oracle:thin:@localhost:1521:TestDB"
+  "url": "jdbc:oracle:thin:@in2npdlnxdb10:1521:if19ca"
   "driverClassName": "oracle.jdbc.driver.OracleDriver"
 "replay":
   "inMemoryObjects": "10000"
