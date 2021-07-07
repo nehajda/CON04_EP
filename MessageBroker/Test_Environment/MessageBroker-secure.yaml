@@ -1,0 +1,52 @@
+"server":
+  "https":
+    "tls":
+      "keyStore":
+        "password-secure": "{cipher}f87c2fd389ad6e6443411ea4371d893114de63a764bca0a38d26caa462240c1e"
+        "key":
+          "password-secure": "{cipher}2b11f44172b918afbcb320d8f3e96f8184ec4b2f878b9ec879ccbd05d9246522"
+      "trustStore":
+        "password-secure": "{cipher}d40b205895006c5c2d4964ee7b90871459c8a31bdde2aa9acbfeba16a596a695"
+"mb":
+  "pipe":
+    "jms":
+      "user-secure": "{cipher}c2845ec92bd60b2fb4e33d564c9dc749f0e4d97e3c22b851ceaebb2ad52f0566"
+      "password-secure": "{cipher}406f820b6d4e681e319d7fcf7ffdb3169c71c23f96724d1e50aa39617dfff9f4"
+"httpOutboundRequest":
+  "https":
+    "tls":
+      "keyStore":
+        "key":
+          "password-secure": "{cipher}10ad68f07c7ae9844f308439be21983a4e8a0f5d5b89325801f4e50f9a4f3199"
+        "password-secure": "{cipher}9bac740e3fbe094191f04202014c3c85b1af50ee79f8462507ba50a8948ce192"
+      "trustStore":
+        "password-secure": "{cipher}b1b710e505575d7919ee9494dd14cc8b0d9582baf7f783faa760cf47912c30db"
+"sftpInbound":
+  "password-secure": "{cipher}f2885b757dfebeff05d131cddc6538add08287a2cdcbd2d5501f548f89afd128"
+"ftpInbound":
+  "password-secure": "{cipher}48e30ce1159fc9b3dad4f02972452f3d711f36becb2c3b1610f3cacffb3390ba"
+"jmsInbound":
+  "queue":
+    "password-secure": "{cipher}cc0d478dde9ab4d16ac8043726fee760332979802a00f361e8987d066949d3bc"
+"srsServer":
+  "https":
+    "tls":
+      "trustStore":
+        "password-secure": "{cipher}9e9e71a55d518772018707e6ef0e134e90157af232ce9d421213024947a9c522"
+      "keyStore":
+        "password-secure": "{cipher}75bfc9da92b64e8bb03aa25e68d234d56be7459ba79fbb6357ac41805be597e1"
+        "key":
+          "password-secure": "{cipher}fe26e48631c681dbacd26ed7667989c8ad2b8c0f55aa8590ef3db877678a73df"
+"jmsOutbound":
+  "queue":
+    "password-secure": "{cipher}05bfabbe4bba81690f285e786f5a2986a9b78238563b9ac9f6d2294c4c99b590"
+"ftpOutbound":
+  "password-secure": "{cipher}66e6813e176abbad7ba717dd7610a648381bd81ace8d4a7394615f70533f0278"
+"sftpOutbound":
+  "password-secure": "{cipher}aa35b6647e2fed2062d4e88e8730ebc4500e6d63d5960517aa36452a64917c35"
+"dpInbound":
+  "consumer":
+    "password-secure": "{cipher}07b9304599da00a6f7bf9d089d9e8bf6d2dcb9467a12e6374a0c74138d28a4bf722bac7f6e01358cc54c8d1b4c2e59d2e73209ba44bd596de36629b4be594600a4200dca0ddd2642ffe3f1c590d6f5156c9e35ab948af99f7d70a21a1bf64acf65904bbf25b70fbf9c06461a7a9256060c3edced5e9b5836a8ac3898f57a4f79a325cb1ebf8ed022ab5769e8944732ec8d1a3bf1197b11af591af9fcf4ebff9be1a76cd73570c3a72a02e46be12d5420"
+"dpOutbound":
+  "publisher":
+    "password-secure": "{cipher}72a471920f1fb8da91f0a8690cfbd35859b0e1b1dc718c3361a9ad6bf8f35ae8be50e8a38b53ef4755e6b82e36932c18cc1864afa135c091cb616e8cb776af6e34ee8c3edbaa87fdacbf165f45842ee5ed7f2f751c5fc8282549d7cbf045aab0b1dc0c2dbc428830c133e1f4937fef65cbdf7d7bf10850615518c717678bfd92dd35a18597beac166d34f271ead654d6273a4482fc55e31f9f3aea642496ccf96dabf41b4dd106f38e79b322a1c82433"
