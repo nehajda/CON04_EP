@@ -1,0 +1,17 @@
+"mb":
+  "pipe":
+    "vm":
+      "state": "started"
+    "jms":
+      "state": "stopped"
+      "sessionCacheSize": "100"
+      "checkConnectivity": "false"
+      "queueName": "MB_PIPE"
+      "redeliveryDelay": "20000"
+      "initialRedeliveryDelay": "20000"
+      "maxConnections": "5"
+      "maximumRedeliveries": "-1"
+      "concurrentConsumers": "5"
+      "primaryNode": "false"
+    "queue":
+      "type": "VM"
