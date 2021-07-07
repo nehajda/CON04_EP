@@ -1,0 +1,172 @@
+"flow":
+  "outbound":
+    "ftp":
+      "checkConnectivity": "false"
+      "state": "stopped"
+    "file":
+      "state": "stopped"
+    "dp":
+      "state": "stopped"
+      "checkConnectivity": "false"
+    "jmsAMQ":
+      "state": "stopped"
+      "checkConnectivity": "false"
+    "sftp":
+      "checkConnectivity": "false"
+      "state": "stopped"
+    "http":
+      "state": "stopped"
+  "inbound":
+    "sftp":
+      "state": "stopped"
+      "checkConnectivity": "false"
+    "dp":
+      "state": "stopped"
+      "checkConnectivity": "false"
+    "ftp":
+      "checkConnectivity": "false"
+      "state": "stopped"
+    "file":
+      "state": "stopped"
+    "jmsAMQ":
+      "state": "stopped"
+      "checkConnectivity": "false"
+    "http":
+      "state": "stopped"
+"jmsInbound":
+  "queue":
+    "initialRedeliveryDelay": "20000"
+    "concurrentConsumers": "5"
+    "primaryNode": "false"
+    "maximumRedeliveries": "5"
+    "user": "admin"
+    "sessionCacheSize": "100"
+    "name": "MB_INBOUND"
+    "brokerURL": "failover:tcp://localhost:61616?jms.prefetchPolicy.all=20"
+    "redeliveryDelay": "20000"
+    "maxConnections": "5"
+"server":
+  "http":
+    "host": "0.0.0.0"
+    "port": "9911"
+  "https":
+    "host": "0.0.0.0"
+    "port": "9910"
+    "tls":
+      "context": "HTTPS_Listener_TLS_Context"
+      "keyStore":
+        "path": "https/keystore.jks"
+      "trustStore":
+        "path": "https/truststore.jks"
+  "listener":
+    "config": "HTTPS_Listener_config"
+"httpOutboundRequest":
+  "https":
+    "host": "127.0.0.1"
+    "tls":
+      "trustStore":
+        "path": "https/truststore.jks"
+        "password-secure": "{cipher}185eb3aae183decc627b011a192f5518718a6ffe0225557709e6f49b971f4e46"
+      "keyStore":
+        "password-secure": "{cipher}8bcc06b98892cd5d2c91bc7d9b559fdf1ed103b2730019f2926e2d78e1ab5976"
+        "path": "https/keystore.jks"
+        "key":
+          "password-secure": "{cipher}aa6b8c1ce9b2b00aa7e2947b587fee234d321b0f5e4364190f8d91169dd7af05"
+      "context": "HTTPS_OutboundRequest_TLS_Context"
+    "port": "9910"
+  "requester":
+    "config": "HTTP_Request_configuration"
+  "http":
+    "port": "9911"
+    "host": "127.0.0.1"
+"ftpOutbound":
+  "user": "myuser"
+  "password-secure": "{cipher}9c4274dad6f7fd124c2a22f64c13adfab18e6bc63a95c5858b63d7f84c0b62a4"
+  "host": "localhost"
+  "port": "21"
+"modelConverter":
+  "canModelService":
+    "requester":
+      "https":
+        "tls":
+          "keyStore":
+            "password-secure": "{cipher}ed3d30d37cd4950331da00c0ff4fd019797ec675ab73eaa9801c1f1623acedc7"
+            "path": "https/keystore.jks"
+            "key":
+              "password-secure": "{cipher}5776a041c504fb06f1641d35f1c399f3ae2489357493a3600b7703549b4cda66"
+          "context": "HTTPS_CanModel_Request_TLS_Context"
+          "trustStore":
+            "path": "https/truststore.jks"
+            "password-secure": "{cipher}e1789990398de87bf9e15e5e54e1d3d9a59ecf8359bafe80a75ac660df3f5a01"
+          "insecure": "true"
+        "port": "9860"
+        "host": "127.0.0.1"
+      "config": "HTTPS_CanModel_Request_configuration"
+      "http":
+        "port": "9861"
+        "host": "127.0.0.1"
+      "path": "/canmodel/api/v1/canModels/"
+    "config": "Local"
+  "config": "configuration/converter-config.yaml"
+  "canModelList": "BYDM 2020.2.0"
+  "isRequired": "true"
+"fileInbound":
+  "fileAge": "500"
+  "path": "./path/to/files"
+  "pollingFrequency": "1000"
+"sftpOutbound":
+  "user": "myuser"
+  "host": "localhost"
+  "port": "21"
+"sftpInbound":
+  "host": "localhost"
+  "port": "21"
+  "responseTimeout": "10000"
+  "user": "myuser"
+  "path": "/path/to/files"
+  "password-secure": "{cipher}49da5a49cd4cda8a9ada14ddccba5b79cf76aff8aeeccba9ccd4986ce79ad5e5"
+"dpInbound":
+  "consumer":
+    "globalReceiver": "LCT.GLOBAL"
+    "topic": "jdpevent3"
+    "groupId": "messageBroker"
+    "timeout": "120000"
+    "protocol":
+      "name": "SASL_SSL"
+      "mechanism": "PLAIN"
+    "partitions": "1"
+    "alllowAllEntities": "true"
+    "receivers":
+      "item": "LCT.GLOBAL, LSR.GLOBAL"
+      "location": "LCT.GLOBAL"
+  "bootstrapServers": "jdpeventhub.servicebus.windows.net:9093"
+  "tenantId": "t30f011232daea2f9"
+"jmsOutbound":
+  "queue":
+    "maxConnections": "5"
+    "initialRedeliveryDelay": "20000"
+    "concurrentConsumers": "5"
+    "sessionCacheSize": "100"
+    "maximumRedeliveries": "5"
+    "brokerURL": "failover:tcp://localhost:61616?jms.prefetchPolicy.all=20"
+    "redeliveryDelay": "20000"
+    "user": "admin"
+"ftpInbound":
+  "responseTimeout": "10000"
+  "host": "localhost"
+  "port": "21"
+  "user": "myuser"
+  "path": "/path/to/files"
+  "passive": "true"
+"dpOutbound":
+  "publisher":
+    "topic": "jdpevent3"
+    "protocol":
+      "name": "SASL_SSL"
+      "mechanism": "PLAIN"
+    "password-secure": "{cipher}510c7a9023da4d03515c0c0cfa872c8539dae3d08fb0681f3f8b8c094e64dc021454ef1b57b3199d3c0ed576af18984cee8aa396a444f506ced9df8563849028aed4132cf6d837ebeefbce6478cec21891ae187dc37397a50966b20f2a94af0fceaaa34920c129a29da7c51a34c0d0eb506a0fe6dbc99435c9f7485e9545ddc948967076227a2d9f910802f44fb38f1426b39271a3bd7cd55d21b91ea5fc1f7f566818fef2a3675fc0a6fdd655028804"
+  "bootstrapServers": "jdpeventhub.servicebus.windows.net:9093"
+"fileOutbound":
+  "pollingFrequency": "1000"
+  "path": "./path/to/files"
+  "fileAge": "500"
