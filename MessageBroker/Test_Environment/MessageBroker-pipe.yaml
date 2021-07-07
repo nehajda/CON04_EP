@@ -1,9 +1,9 @@
 "mb":
   "pipe":
     "vm":
-      "state": "started"
-    "jms":
       "state": "stopped"
+    "jms":
+      "state": "started"
       "sessionCacheSize": "100"
       "checkConnectivity": "false"
       "queueName": "MB_PIPE"
@@ -13,5 +13,7 @@
       "maximumRedeliveries": "-1"
       "concurrentConsumers": "5"
       "primaryNode": "false"
+      "brokerURL": "failover:(tcp://in2npdvjdacon04:61616)?jms.prefetchPolicy.all=20"
     "queue":
-      "type": "VM"
+      "type": "JMS"
+      "state": "started"
