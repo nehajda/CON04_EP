@@ -1,0 +1,9 @@
+"server":
+  "https":
+    "tls":
+      "keyStore":
+        "password-secure": "{cipher}9c901815a55c903bd2fc82ce423eb55a90dc5911d57cb7bac6a5f3eaa572bd4f"
+        "key":
+          "password-secure": "{cipher}af76ae0963ff1f09d63eb25078ebda35232e038a580c8d440f8b357a91530b49"
+      "trustStore":
+        "password-secure": "{cipher}48f17b9bc414192a62cd40ba3ed03af49f885cdaf4851358524bd77961f6772a"
