@@ -9,7 +9,7 @@
       "state": "stopped"
       "checkConnectivity": "false"
     "jmsAMQ":
-      "state": "stopped"
+      "state": "started"
       "checkConnectivity": "false"
     "sftp":
       "checkConnectivity": "false"
@@ -29,7 +29,7 @@
     "file":
       "state": "stopped"
     "jmsAMQ":
-      "state": "stopped"
+      "state": "started"
       "checkConnectivity": "false"
     "http":
       "state": "stopped"
@@ -42,7 +42,7 @@
     "user": "admin"
     "sessionCacheSize": "100"
     "name": "MB_INBOUND"
-    "brokerURL": "failover:tcp://localhost:61616?jms.prefetchPolicy.all=20"
+    "brokerURL": "failover:(tcp://in2npdvjdacon04:61616)?jms.prefetchPolicy.all=20"
     "redeliveryDelay": "20000"
     "maxConnections": "5"
 "server":
@@ -75,7 +75,7 @@
       "context": "HTTPS_OutboundRequest_TLS_Context"
     "port": "9910"
   "requester":
-    "config": "HTTP_Request_configuration"
+    "config": "HTTPS_Request_configuration"
   "http":
     "port": "9911"
     "host": "127.0.0.1"
@@ -148,7 +148,7 @@
     "concurrentConsumers": "5"
     "sessionCacheSize": "100"
     "maximumRedeliveries": "5"
-    "brokerURL": "failover:tcp://localhost:61616?jms.prefetchPolicy.all=20"
+    "brokerURL": "failover:(tcp://in2npdvjdacon04:61616)?jms.prefetchPolicy.all=20"
     "redeliveryDelay": "20000"
     "user": "admin"
 "ftpInbound":
