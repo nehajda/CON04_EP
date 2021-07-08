@@ -1,2 +1,4 @@
-"Schedular":
-  "frequencyInMillis": "600000"
+# Properties relating to Schedular
+Schedular:
+  frequencyInMillis: "600000"
+

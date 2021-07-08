@@ -1,21 +1,25 @@
-"server":
-  "request":
-    "replay":
-      "tls":
-        "trustStore":
-          "password-secure": "{cipher}bbdb417d6f3723fc5322557c0472ef14b35ed48eb6a963e8478eda05759b3ad4"
-        "keyStore":
-          "password-secure": "{cipher}8b978008ebdcbc84dbf84eb709d966fc7c70016690136c5110a29a5c6dddb0c0"
-          "key":
-            "password-secure": "{cipher}1e4e92c58d82b440fcb380f9da270906a74f734313406bfadfa0565948d0bb40"
-  "https":
-    "tls":
-      "keyStore":
-        "password-secure": "{cipher}2771fae47a90983e70e18097edbc28d70e3345d019d9eb6cb99a1f344995501f"
-        "key":
-          "password-secure": "{cipher}3ed35f65cc28d3fd0403aa46b7100cb892696a6310c9d071cc88cf9766ddbd81"
-      "trustStore":
-        "password-secure": "{cipher}36cca7f75a49d0c8ad49f2b6de66b9bffb5675c1ee551ebae0468e09619ff115"
-"MSDatabase":
-  "password-secure": "{cipher}a992a2ede979abfc806c76ca496fafd30b81010cd3a830ae750bb806ef4dc205"
-  "user-secure": "{cipher}f2bcf4180ef1b279139305bffda21a05130fbe85738712c66184da5833499d7b"
+MSDatabase:
+  user-secure: "MSCSSV03"
+  password-secure: "MSCSSV03"
+
+
+server:
+
+  https:
+    tls:
+      keyStore:
+        password-secure: "changeme"
+        key:
+          password-secure: "changeme"
+      trustStore:
+        password-secure: "changeme"
+        
+  request:
+    replay:
+      tls:
+        keyStore:
+          password-secure: "changeme"
+          key:
+            password-secure: "changeme"
+        trustStore:  
+          password-secure: "changeme"    
