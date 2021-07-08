@@ -1,7 +1,7 @@
 # config-repo/staging-ep/staging-ep-messagestore.yaml
 
 messageStore:
-  host: "in2npdvjdacon04"
+  host: "localhost"
   port: "9830"
   service:
     name: "EPA-GLOBAL"
