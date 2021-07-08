@@ -1,11 +1,10 @@
-# Properties relating to EFramework
-
-eframework:
-  applicationId: "MessageStore"
-  errorReport:
-    enabled: "true"
-    errorReportPath: "./errorReports"
-    title: "MessageStore Error Report"
-    htmlTemplatePath: "errorReportTemplate.html"
-    payload:
-      transaction.size: "2048"
+"eframework":
+  "errorReport":
+    "errorReportPath": "./errorReports"
+    "htmlTemplatePath": "errorReportTemplate.html"
+    "enabled": "true"
+    "title": "MessageStore Error Report"
+    "payload":
+      "transaction":
+        "size": "2048"
+  "applicationId": "MessageStore"
