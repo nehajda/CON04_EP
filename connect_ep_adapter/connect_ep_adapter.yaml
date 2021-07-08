@@ -1,0 +1,26 @@
+# config-repo/staging-ep/staging-ep.yaml
+
+# A sample of a property
+propertySample: "STAGING-EP API"
+
+filePath: "C:/test/test.json"
+batch:
+  size: 1000
+  
+ack:
+  notification:
+    received:
+      enabled: "true"
+    accepted:
+      enabled: "true"
+    error:
+      enabled: "true"
+
+# Message Archival
+messageArchive:
+  location: "C:/epa-2021.1.0"
+  enabled: "true"
+
+bydm:
+  models: '#[["BYDM 2020.4.0"]]'
+  isValidationEnabled : 'false'

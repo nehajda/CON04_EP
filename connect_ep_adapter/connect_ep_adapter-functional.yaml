@@ -1,30 +1,3 @@
-# config-repo/staging-ep/staging-ep.yaml
-
-# A sample of a property
-propertySample: "STAGING-EP API"
-
-filePath: "C:/test/test.json"
-batch:
-  size: 1000
-  
-ack:
-  notification:
-    received:
-      enabled: "true"
-    accepted:
-      enabled: "true"
-    error:
-      enabled: "true"
-
-# Message Archival
-messageArchive:
-  location: "C:/epa-2021.1.0"
-  enabled: "true"
-
-bydm:
-  models: '#[["BYDM 2020.4.0"]]'
-  isValidationEnabled : 'false'
-  
 #metadata configs
 BYDMMessage:
   #BYDMMessage to its respective AG tableName prefix
@@ -215,10 +188,5 @@ inventory:
 
 heirarchyDefinition:
   tables: "EXT_EPSD_IMPORT_HIERARCHY_DEF,EXT_EPSD_IMPORT_HIER_LEVEL_DEF,EXT_EPSD_IMPORT_LEVEL_DEF,EXT_EPSD_IMPORT_MBR_ATTR_DEF,EXT_EPSD_IMPORT_MEMBER_DEF"
-  staticAttributes: "INPUTSEQUENCE,ACTIONCODE,CURRENT_ID,ID,CULTURE_NAME,SHORT_DESCRIPTION,LONG_DESCRIPTION,BUS_ENTITY_TECH_KEY,PARENT_HIER_DEF_ID"
-#Heirarchy definition config end 
-
-
-
-
- 
+  staticAttributes: "INPUTSEQUENCE,ACTIONCODE,CURRENT_ID,ID,CULTURE_NAME,SHORT_DESCRIPTION,LONG_DESCRIPTION,BUS_ENTITY_TECH_KEY,PARENT_HIER_DEF_ID,DISTANCE_FROM_CORE"
+#Heirarchy definition config end  
