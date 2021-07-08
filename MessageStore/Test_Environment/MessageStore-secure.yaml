@@ -17,5 +17,5 @@
       "trustStore":
         "password-secure": "{cipher}36cca7f75a49d0c8ad49f2b6de66b9bffb5675c1ee551ebae0468e09619ff115"
 "MSDatabase":
-  "password-secure": "{cipher}a992a2ede979abfc806c76ca496fafd30b81010cd3a830ae750bb806ef4dc205"
-  "user-secure": "{cipher}f2bcf4180ef1b279139305bffda21a05130fbe85738712c66184da5833499d7b"
+  "password-secure": "MS_EPCON04"
+  "user-secure": "MS_EPCON04"
