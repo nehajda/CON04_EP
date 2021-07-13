@@ -25,5 +25,5 @@ server:
         intermediate:
           enable: "true"
           ekb: "MB_EP_INTERMEDIATE_EKB"
-          ext: "MB_EP_INTERMEDIATE_EXT"
+          ext: "MB_EP_INTERMEDIATE_EXT1"
           invTrxn: "MB_EP_INTERMEDIATE_INVTRXN"
