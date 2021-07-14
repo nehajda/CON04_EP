@@ -23,7 +23,7 @@ server:
           nonBulk: "MB_EP_INBOUND"
           bulk: "MB_EP_INBOUND_BULK"
         intermediate:
-          enable: "true"
+          enable: "false"
           ekb: "MB_EP_INTERMEDIATE_EKB"
           ext: "MB_EP_INTERMEDIATE_EXT"
           invTrxn: "MB_EP_INTERMEDIATE_INVTRXN"
