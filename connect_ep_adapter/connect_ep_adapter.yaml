@@ -3,7 +3,6 @@
 # A sample of a property
 propertySample: "STAGING-EP API"
 
-filePath: "C:/test/test.json"
 batch:
   size: 1000
   
@@ -24,3 +23,7 @@ messageArchive:
 bydm:
   models: '#[["BYDM 2020.4.0"]]'
   isValidationEnabled : 'false'
+  
+ep:
+  ms:
+    enabled: 'true'

@@ -1,22 +1,26 @@
 # config-repo/staging-ep/staging-ep-secure.yaml
   
 db:
-  connection:
-    maxPoolSize: "100"
-    minPoolSize: "10"
-    preparedStatementCacheSize: "10"
-    maxWait: "100"
   ext:
-    host: "IN2NPDLNXDB18"
-    name: "Con04_EKB"
     username-secure: "EXT"
     password-secure: "EXT"
-    port: "1521"
-    instance : "IF18CA"
   ekb:
-    host: "IN2NPDLNXDB18"
-    name: "Con04_EKB"
     username-secure: "EKB"
     password-secure: "EKB"
-    port: "1521"
-    instance : "IF18CA"
+server:
+  jms:
+    queue:
+      user: "admin"
+      password-secure: "admin"
+sftp:
+    username: "CHANGEME"
+    password-secure: "CHANGEME"
+
+
+  ## Following sender configs not in use 
+bulk:
+  callback:
+    password-secure:
+    azure:
+      connection:
+        string-secure:

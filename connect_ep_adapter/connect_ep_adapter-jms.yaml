@@ -27,3 +27,4 @@ server:
           ekb: "MB_EP_INTERMEDIATE_EKB"
           ext: "MB_EP_INTERMEDIATE_EXT"
           invTrxn: "MB_EP_INTERMEDIATE_INVTRXN"
+          concurrentConsumers : 25

@@ -1,0 +1,54 @@
+##########################################################
+#
+#         bulk notification configuration   
+#
+##########################################################
+bulk:
+  notification:
+    enabled: "false"
+  serviceName: "EP-GLOBAL"
+  serviceType: "EP"
+  serviceInstance: "EPA"
+  serviceNamedVersion: "EP-2020.1.0"
+  ## Following sender configs not in use 
+  read:
+    batch:
+      size: "100"    
+  persistent:
+    service:
+    store:
+      host:
+      type: "Local File Store"
+      path: "//IN2-1026937LT/u/EP"
+  callback:
+    protocol: "FILE"
+    ingestion:
+      host: "localhost"
+      port: "9870"
+      resource:
+        path: "/ing/api/v1/callback"
+    username:
+    path:
+    azure:
+      container:
+        name:
+sftp:
+    version: "SFTPv1.2.2"
+    host: "localhost"
+    evictionCheck: "-1"
+    fileage: "1000"
+    filesizecheck: "5"
+    maxActive: "0"
+    maxIdle: "0"
+    maxWait: "0"
+    minEviction: "1800000"
+    polling:
+        frequency: "120000"
+    port: "22"
+    reconnection:
+        attempts: "3"
+        frequency: "90000"
+    connection:
+        responsce:
+            timeout: '10'
+        timeout: '10'
