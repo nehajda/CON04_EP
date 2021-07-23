@@ -48,7 +48,7 @@ AG_1:
     customAttributes:
   TTL_BYR:
     planIdSuffix: "TEST"
-    customAttributes: 
+    customAttributes:  
 
 
 #List of all AG_2_* tables and their respective custom colums  
@@ -128,12 +128,12 @@ inventory:
   #inventoryOnOrder2 will go to following table followed by its measuring codes(custom column)
   order: 
     tableName: 'PKB_ACTUAL_ON_ORDER'
-    measureCode: "OO_CST,OO_UNT"
+    measureCode: "OO_CST,OO_UNT,OO_RTL"
     
    #inventoryOnHand2 will go to following table followed by its measuring codes(custom column)
   onHand: 
     tableName: 'PKB_ACTUAL_INVBAL'
-    measureCode: "EOP_CST,EOP_UNT"
+    measureCode: "EOP_CST,EOP_UNT,EOP_RTL"
   
 
   #transactionCode in inventoryTransaction2 message maps to tableName and its measureCode

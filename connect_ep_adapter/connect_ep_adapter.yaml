@@ -21,9 +21,9 @@ messageArchive:
   enabled: "true"
 
 bydm:
-  models: '#[["BYDM 2020.4.0"]]'
-  isValidationEnabled : 'false'
-  
+  models: '#[["BYDM 2021.6.0"]]'
+  isValidationEnabled : 'true'
+
 ep:
   ms:
     enabled: 'true'

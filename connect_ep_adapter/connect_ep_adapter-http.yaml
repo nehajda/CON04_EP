@@ -47,7 +47,3 @@ replay:
   http:
     host: "0.0.0.0"
     port: "9937"
-
-# Defines HTTP path for API exposed by the layer of API-led architecture.
-#exp.front.api.base: "jda-staging-ep-api/v1"
-#sys.back.api.base: "jda-staging-ep-api/back/v1"
