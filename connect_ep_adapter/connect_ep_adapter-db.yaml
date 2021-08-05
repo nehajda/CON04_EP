@@ -7,11 +7,11 @@ db:
     maxWait: "100"
   ext:
     host: "IN2NPDLNXDB18"
-    name: "Con04_EKB"
+    name: "EXT"
     port: "1521"
     instance : "IF18CA"
   ekb:
     host: "IN2NPDLNXDB18"
-    name: "Con04_EKB"
+    name: "EKB"
     port: "1521"
     instance : "IF18CA"

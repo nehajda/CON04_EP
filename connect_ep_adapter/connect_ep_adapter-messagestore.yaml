@@ -29,3 +29,6 @@ messageStore:
       trustStore:
         path: "truststore.jks"
         password-secure: "changeme"
+#*****************Message Store OAuth*********************
+adapter.ms.client.id: "xx"
+adapter.ms.client.secret: "xx"

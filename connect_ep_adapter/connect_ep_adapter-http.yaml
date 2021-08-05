@@ -25,6 +25,9 @@ server:
     port: "9927"
 
 # Server properties
+
+bulk.replay.path: "epa/v1/replay"
+
 replay:
   listener: 
     #Controls whether api endpoint accepts HTTP or HTTPS

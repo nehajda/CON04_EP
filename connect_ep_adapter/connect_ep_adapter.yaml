@@ -27,3 +27,4 @@ bydm:
 ep:
   ms:
     enabled: 'true'
+    saveBulkMessageEnabled: 'false'

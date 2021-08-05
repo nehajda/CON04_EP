@@ -133,7 +133,7 @@ inventory:
    #inventoryOnHand2 will go to following table followed by its measuring codes(custom column)
   onHand: 
     tableName: 'PKB_ACTUAL_INVBAL'
-    measureCode: "EOP_CST,EOP_UNT,EOP_RTL"
+    measureCode: "EOP_CST,EOP_UNT"
   
 
   #transactionCode in inventoryTransaction2 message maps to tableName and its measureCode
