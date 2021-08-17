@@ -5,7 +5,7 @@ server:
   jms:
     queue:
       name: "staging-ep"
-      brokerURL: "tcp://localhost:61616"
+      brokerURL: "tcp://IN2NPDVJDACON04.dev.corp.local:61616"
       user: "admin"
       password-secure: "admin"
       maxConnections: "5"
