@@ -10,7 +10,7 @@
   "session-timeout": 300,
   "replay-tabs-allowed": 5,
   "search-tabs-allowed": 5,
-  "auth-provider" : "liam",
+  "auth-provider" : "basic-auth",
   "adalConfig": {
     "config": {
       "auth": {
