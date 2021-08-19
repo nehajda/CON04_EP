@@ -1,6 +1,6 @@
-#MSDatabase:
-  #user-secure: "test"
-  #password-secure: "test"
+MSDatabase:
+  user-secure: "MS_EPCON04"
+  password-secure: "MS_EPCON04"
 
 server:
   listener:
