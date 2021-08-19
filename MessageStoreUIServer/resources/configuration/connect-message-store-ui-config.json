@@ -1,5 +1,5 @@
 {
-  "base-url": "http://localhost:9831/",
+  "base-url": "https://in2npdvjdacon04.dev.corp.local:8085/services/",
   "ms-base-url": "messagestore/api/v3/",
   "std-http-headers": {
     "Content-Type": "application/json",
