@@ -63,24 +63,24 @@ response:
       img_src:     "\"img-src 'self';\""
       frame_src:   "\"frame-src   ;\""
       # on which server it can make a connection request. it shoud contain self, liam and message store url only.
-      connect_src: "\"connect-src 'self' <message-store-url> <liam-authority-url> <liam-scope-url>\""
+      connect_src: "\"connect-src 'self' https://in2npdvjdacon04.dev.corp.local:9830\""
 
 # DataBase Config
 # Uncomment the MSDatabase config(line no 70 to 83) and configure if using basic Auth.
-#MSDatabase:
-  #required: "true"
-  #url: "jdbc:sqlserver://localhost:1433;databaseName=test"
-  #driverClassName: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
-  #reconnectionAttempts: "1"
+MSDatabase:
+  required: "true"
+  url: "jdbc:oracle:thin:@IN2NPDLNXDB18:1521:if18ca"
+  driverClassName: "oracle.jdbc.driver.OracleDriver"
+  reconnectionAttempts: "1"
       
-  #connection:
-    #maxPoolSize: "100"
-    #minPoolSize: "10"
-    #preparedStatementCacheSize: "10"
-    #maxWait: "10"
-    #acquireIncrement: "2"
+  connection:
+    maxPoolSize: "100"
+    minPoolSize: "10"
+    preparedStatementCacheSize: "10"
+    maxWait: "10"
+    acquireIncrement: "2"
 
-#queryTimeout: "500"
+queryTimeout: "500"
 
 MSserver:
   requester: 
