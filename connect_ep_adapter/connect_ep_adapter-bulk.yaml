@@ -4,39 +4,38 @@
 #
 ##########################################################
 bulk:
-  notification:
-    enabled: "false"
   serviceName: "EP-GLOBAL"
   serviceType: "EP"
   serviceInstance: "EPA"
   serviceNamedVersion: "EP-2020.1.0"
-  ## Following sender configs not in use 
-  read:
-    batch:
-      size: "100"    
-  persistent:
-    service:
-    store:
-      host:
-      type: "Local File Store"
-      path: "//IN2-1026937LT/u/EP"
-  callback:
-    protocol: "FILE"
-    ingestion:
-      host: "localhost"
-      port: "9870"
-      resource:
-        path: "/ing/api/v1/callback"
-    username:
-    path:
-    azure:
-      container:
-        name:
-sftp:
+  maxRetries: "3"
+  millisBetweenRetries: "60000"
+  receivers: 'SCPO'
+
+outbound:
+  #persistentStoreType: 'SFTP'
+  persistentStoreType: 'FILE'
+  #persistentStoreType: 'azureBlob'
+  localFile:
+    directory: "/epa-2021.1.0/retailPlan2"
+  sftp:
+    host: "localhost"
+    port: "22"
+    directory: "/home/npd-dcsv/EPA"
+  azureBlob:
+    path: "EPA"
+    #containerName: "rgbycntcmastgdiag-sap-dev"
+    #connectionString: "DefaultEndpointsProtocol=https;AccountName=rgbycntcmastgdiag;AccountKey=trwDZG2du4dhaoHh0ja8kQ28k15NBzZqk6xpVike25u9M/FC2ss9l5mnN2/gVAMBaqUckSB6Z5a3rqbBPBgFJQ==;EndpointSuffix=core.windows.net"
+    containerName: "retailplanextract"
+    connectionString: "BlobEndpoint=https://sabc48eus2bkp.blob.core.windows.net/;QueueEndpoint=https://sabc48eus2bkp.queue.core.windows.net/;FileEndpoint=https://sabc48eus2bkp.file.core.windows.net/;TableEndpoint=https://sabc48eus2bkp.table.core.windows.net/;SharedAccessSignature=sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2022-05-17T21:23:54Z&st=2022-04-06T13:23:54Z&spr=https&sig=y%2BxDtND3dk8m4PE0FLnCk%2BsHHLXjBVzPsOe%2BvYeq65U%3D"
+    
+    
+
+inbound: 
+  sftp:
     version: "SFTPv1.2.2"
     host: "localhost"
     evictionCheck: "-1"
-    fileage: "1000"
     filesizecheck: "5"
     maxActive: "0"
     maxIdle: "0"
@@ -48,7 +47,7 @@ sftp:
     reconnection:
         attempts: "3"
         frequency: "90000"
+    response:
+      timeout: '10'
     connection:
-        responsce:
-            timeout: '10'
-        timeout: '10'
+      timeout: '10'
