@@ -1,0 +1,7 @@
+# config-repo/staging-ep/staging-ep.yaml
+
+# A sample of a property
+oubound:
+  query:
+    ftf: "SELECT DISTINCT  ftf_name,meas_name FROM pf_md_ftfmeas WHERE meas_name IN  (:measure)"
+    level: "select dim.dim_name, dim1.dim_key,ftf.level_key, dim.level_name from pf_md_ftfdim ftf inner join pf_md_dimlevel dim  on ftf.level_key=dim.level_key and ftf.pkbf_dim_key = dim.pkbf_dim_key and ftf.ftf_name=:ftfName inner join pf_md_dim dim1 on DIM1.DIM_NAME = dim.dim_name"

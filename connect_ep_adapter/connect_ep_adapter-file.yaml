@@ -1,0 +1,8 @@
+epOutBound:
+  archiveEnabled: true
+  folderLocation: "C:/epa-2021.1.0/aggregatedData"
+  fileMoveAfterProcess:
+    folderLocation: "C:/epa-2021.1.0/processed"
+  fileMoveAfterFailure:
+    folderLocation: "C:/epa-2021.1.0/error"
+  
