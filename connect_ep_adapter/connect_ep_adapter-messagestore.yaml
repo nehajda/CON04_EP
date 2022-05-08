@@ -2,24 +2,26 @@
 
 messageStore:
   host: "IN2NPDVjdacon04.dev.corp.local"
-  port: "9831"
   service:
     name: "EPA-GLOBAL"
     type: "EPA"
     instance: "EPA"
     enable: "true"
-    version: "EPA-2020.1.0"
+    version: "EPA-2021.1.0"
   basePath: "/messagestore/api/v3"
   storeClientId: "EPA"
   storeClientSecret: "EPA"
   protocol: 
   #Controls whether api endpoint accepts HTTP or HTTPS
-    #config: "msHTTPSConfiguration"
+    #config: "MessageStore_HTTP"
     config: "MessageStore_HTTP"
   failWhenDuplicate: "false"
-  responseTimeout: "60000"
-  connectionIdleTimeout: "60000"
+  responseTimeout: "600000"
+  connectionIdleTimeout: "600000"
+  http:
+    port: "9831"
   https:
+    port: "9830"
     tls:
       keyStore:
         path: "keystore.jks"
@@ -29,6 +31,3 @@ messageStore:
       trustStore:
         path: "truststore.jks"
         password-secure: "changeme"
-#*****************Message Store OAuth*********************
-adapter.ms.client.id: "xx"
-adapter.ms.client.secret: "xx"
