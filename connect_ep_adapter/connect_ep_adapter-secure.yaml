@@ -7,20 +7,16 @@ db:
   ekb:
     username-secure: "EKB"
     password-secure: "EKB"
-server:
-  jms:
-    queue:
-      user: "admin"
-      password-secure: "admin"
-sftp:
-    username: "CHANGEME"
-    password-secure: "CHANGEME"
-
-
-  ## Following sender configs not in use 
-bulk:
-  callback:
-    password-secure:
-    azure:
-      connection:
-        string-secure:
+jms:
+  queue:
+    user: "admin"
+    password-secure: "admin"
+inbound:
+  sftp:
+    username: "npd-dcsv"
+    password-secure: "jda123"
+    
+outbound:
+  sftp:
+    username: "npd-dcsv"
+    password-secure: "jda123"
