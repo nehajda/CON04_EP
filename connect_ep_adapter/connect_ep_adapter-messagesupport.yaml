@@ -5,9 +5,8 @@ vts:
     #Controls whether api endpoint accepts HTTP or HTTPS
     config: "vtsHTTPConfiguration"
     #config: "vtsHTTPSConfiguration"
-  
+  host: "0.0.0.0"  
   https:
-    host: "0.0.0.0"
     port: "9840"
     tls:
       keyStore:
@@ -18,9 +17,7 @@ vts:
       trustStore:
         path: "truststore.jks"
         password-secure: "changeme"
-      
   http:
-    host: "0.0.0.0"
     port: "9841"
   
 srs:
@@ -30,9 +27,8 @@ srs:
     #Controls whether api endpoint accepts HTTP or HTTPS
     #config: "srsHTTPConfiguration"
     config: "srsHTTPSConfiguration"
-    
+  host: "0.0.0.0"   
   https:
-    host: "0.0.0.0"
     port: "9820"
     tls:
       keyStore:
@@ -43,13 +39,11 @@ srs:
       trustStore:
         path: "truststore.jks"
         password-secure: "changeme"
-      
   http:
-    host: "0.0.0.0"
     port: "9821"
     
 version:
-  serviceName : EPA
+  serviceName : "EPA"
   localMode: "true"
   bindingFileLocation: "srs/service-definition.yaml"
   definitionFileLocation : "srs/service-binding.yaml"
