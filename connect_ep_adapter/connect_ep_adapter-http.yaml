@@ -29,4 +29,4 @@ inbound:
   lowestLevelRetailData:
     path: "epa/v1/outbound/lowestLevelRetailData"
   aggregatedlRetailData:
-    path: "epa/v1/outbound/aggregatedlRetailData"
+    path: "epa/v1/outbound/aggregatedlRetailData1"
