@@ -17,7 +17,7 @@ outbound:
   persistentStoreType: 'FILE'
   #persistentStoreType: 'azureBlob'
   localFile:
-    directory: "/epa-2021.1.0/retailPlan2"
+    directory: "/epa-2021.1.0/retailPlan21"
   sftp:
     host: "localhost"
     port: "22"
