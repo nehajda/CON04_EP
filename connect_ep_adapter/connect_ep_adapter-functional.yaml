@@ -222,4 +222,4 @@ attributeDefinition:
 #Attribute definition config end
 
 outbound:
-  planType: "BUPP"
+  planType: "BUPP1"
