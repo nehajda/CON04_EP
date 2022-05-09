@@ -4,17 +4,27 @@
 propertySample: "STAGING-EP API"
 
 batch:
-  size: 1000
+  size: 5000
   
 ack:
-  notification:
-    received:
-      enabled: "true"
-    accepted:
-      enabled: "true"
-    error:
-      enabled: "true"
-
+  senders: 'EPA.GLOBAL'
+  receivers: 'HOST.GLOBAL'
+  inbound:
+    notification:
+      received:
+        enabled: "true"
+      accepted:
+        enabled: "true"
+      error:
+        enabled: "true"
+  outbound:
+    notification:
+      received:
+        enabled: "true"
+      accepted:
+        enabled: "true"
+      error:
+        enabled: "true"
 # Message Archival
 messageArchive:
   location: "C:/epa-2021.1.0"
